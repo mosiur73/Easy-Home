@@ -173,10 +173,10 @@ export function PropertyListing() {
       <Button
         variant="ghost"
         size="sm"
-        className="fixed top-4 left-4 z-50 lg:hidden bg-white shadow-md"
+        className="fixed top-20 left-4 z-50 lg:hidden bg-white shadow-md"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
-        {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5 " />}
       </Button>
 
       {isMobileMenuOpen && (
