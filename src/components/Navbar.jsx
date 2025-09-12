@@ -3,7 +3,7 @@ import { Heart, Home } from "lucide-react"
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white border-b border-gray-100 px-6 py-4">
+    <nav className="w-full bg-white border-b border-gray-100 px-6 py-4 sticky top-0 z-50   backdrop-blur">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -49,3 +49,67 @@ export default function Navbar() {
     </nav>
   )
 }
+
+
+// const properties = [
+//   {
+//     id: 1,
+//     name: "Maple Grove Garden House",
+//     price: 280,
+//     location: "New York, USA",
+//     beds: 4,
+//     bathrooms: 4,
+//     sqft: 450,
+//     image: "/image.png",
+//   },
+//   {
+//     id: 2,
+//     name: "Sunset Towers Eklosbet",
+//     price: 340,
+//     location: "New York, USA",
+//     beds: 4,
+//     bathrooms: 4,
+//     sqft: 450,
+//     image: "/image1.png",
+//   },
+//   {
+//     id: 3,
+//     name: "Riverside Retreat",
+//     price: 260,
+//     location: "New York, USA",
+//     beds: 4,
+//     bathrooms: 4,
+//     sqft: 450,
+//     image: "/image2.png",
+//   },
+//   {
+//     id: 4,
+//     name: "Golden Meadows",
+//     price: 280,
+//     location: "New York, USA",
+//     beds: 4,
+//     bathrooms: 4,
+//     sqft: 450,
+//     image: "/image3.png",
+//   },
+//   {
+//     id: 5,
+//     name: "Ocean Sea Breeze",
+//     price: 280,
+//     location: "New York, USA",
+//     beds: 4,
+//     bathrooms: 4,
+//     sqft: 450,
+//     image: "/image4.png",
+//   },
+//   {
+//     id: 6,
+//     name: "The Urban Nest Lofts",
+//     price: 280,
+//     location: "New York, USA",
+//     beds: 4,
+//     bathrooms: 4,
+//     sqft: 450,
+//     image: "/image5.png",
+//   },
+// ]
