@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Heart, Home, Menu, X } from "lucide-react"
+import Link from "next/link"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,7 +20,7 @@ export default function Navbar() {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-gray-700 hover:text-purple-700 font-medium transition-colors">Buy</a>
+          <a href="/" className="text-gray-700 hover:text-purple-700 font-medium transition-colors">Buy</a>
           <a href="#" className="text-gray-700 hover:text-purple-700 font-medium transition-colors">Rent</a>
           <a href="#" className="text-gray-700 hover:text-purple-700 font-medium transition-colors">Sell</a>
           <a href="#" className="text-gray-700 hover:text-purple-700 font-medium transition-colors">Agents</a>
@@ -36,9 +37,11 @@ export default function Navbar() {
           </Button>
 
           {/* Login Now = Desktop only */}
+            <Link href="/signin">
           <Button className="hidden md:inline-flex bg-purple-800 hover:bg-purple-900 text-white px-6 py-2 rounded-full font-medium">
-            Login Now
-          </Button>
+            Login Now</Button>
+          </Link>
+          
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
@@ -61,7 +64,7 @@ export default function Navbar() {
 
           {/* Login button only in dropdown for mobile */}
           <Button className="bg-purple-800 hover:bg-purple-900 text-white rounded-full font-medium w-full mt-2">
-            Login Now
+             <Link href="/signin"></Link>Login Now
           </Button>
         </div>
       )}
