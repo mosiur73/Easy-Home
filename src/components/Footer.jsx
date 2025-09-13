@@ -105,7 +105,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="text-[8rem] md:text-[12rem] lg:text-[12rem] font-bold text-[#8A7384] text-center leading-none whitespace-nowrap">
+        <div className="text-[5rem] md:text-[12rem] lg:text-[12rem] font-bold text-[#8A7384] text-center leading-none whitespace-nowrap">
           WiztecBD
         </div>
       </div>

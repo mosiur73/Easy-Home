@@ -1,6 +1,6 @@
 export default function Profit() {
   return (
-    <section className="relative bg-gradient-to-b from-[#1b0b1e] to-[#2a1230] text-white min-h-screen flex flex-col items-center justify-center px-6">
+    <section className="relative bg-gradient-to-b from-[#2A0019] to-[#42233A] text-white min-h-screen flex flex-col items-center justify-center px-6">
       {/* Small decorative dots/stars */}
       <div className="absolute top-10 left-10 w-2 h-2 bg-white/40 rounded-full"></div>
       <div className="absolute top-32 right-20 w-1.5 h-1.5 bg-white/40 rounded-full"></div>
@@ -8,9 +8,10 @@ export default function Profit() {
 
       {/* Content */}
       <div className="max-w-3xl text-center mt-20">
-        <p className="text-sm uppercase tracking-widest text-gray-300 mb-3 ">
+        
+         <span className="px-6 py-3 rounded-full text-xs font-semibold bg-[#1B162699] uppercase tracking-wider">
           Build For You
-        </p>
+        </span>
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
           Built for <span className="text-cyan-300">Creators</span> -<br />
           Powered for <span className="text-purple-400">Profit</span>
@@ -40,7 +41,7 @@ export default function Profit() {
       </div>
 
       {/* Stats Section */}
-      <div className="mt-16 max-w-5xl w-full bg-[#2b1731] border border-gray-700 rounded-2xl shadow-xl py-8 mb-8">
+      <div className="mt-16 max-w-5xl w-full bg-[#42233A] border border-gray-700 rounded-2xl shadow-xl py-8 mb-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-6 px-8 ">
           <h2 className="text-lg md:text-xl font-semibold">
             Sell from day one – even with zero audience
