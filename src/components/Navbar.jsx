@@ -55,7 +55,7 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden fixed top-16 right-0 w-1/2 h-fit flex flex-col items-start gap-4 px-6 py-4 bg-white border-t border-gray-200">
-          <a href="#" className="text-gray-700 hover:text-purple-700 font-medium">Buy</a>
+          <a href="/" className="text-gray-700 hover:text-purple-700 font-medium">Buy</a>
           <a href="#" className="text-gray-700 hover:text-purple-700 font-medium">Rent</a>
           <a href="#" className="text-gray-700 hover:text-purple-700 font-medium">Sell</a>
           <a href="#" className="text-gray-700 hover:text-purple-700 font-medium">Agents</a>
@@ -63,9 +63,10 @@ export default function Navbar() {
           <a href="#" className="text-gray-700 hover:text-purple-700 font-medium">Contact Us</a>
 
           {/* Login button only in dropdown for mobile */}
+          <Link href="/signin">
           <Button className="bg-purple-800 hover:bg-purple-900 text-white rounded-full font-medium w-full mt-2">
-             <Link href="/signin"></Link>Login Now
-          </Button>
+           Login Now</Button>
+             </Link>
         </div>
       )}
     </nav>

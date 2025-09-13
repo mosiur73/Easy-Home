@@ -10,7 +10,7 @@ export function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex flex-col md:flex-row">
       {/* Left side - Login Form */}
       <div className="flex-1 flex items-center justify-center p-8 bg-white">
         <div className="w-full max-w-md space-y-8">
@@ -191,10 +191,10 @@ export function LoginPage() {
 
       {/* Right side - Hero Image */}
       <div className="flex-1 relative overflow-hidden">
-       {/* Right side - Hero Image */}
+      
       <div className="flex-1 flex items-center justify-center p-8 ">
         <img 
-          className="max-w-md h-auto object-contain"
+          className="max-w-md h-auto object-contain rounded-br-4xl rounded-tl-4xl"
           src="/login.png" alt="login image" 
         />
       </div>
